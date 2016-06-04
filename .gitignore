@@ -53,7 +53,7 @@ Temporary Items
 *.log
 *.rpt
 # Temp directry
-*.cydsn/codegnetemp/*
+*.cydsn/codegentemp/*
 # Results
 *.cydsn/DP8051/*
 *.cydsn/CortexM3/*
