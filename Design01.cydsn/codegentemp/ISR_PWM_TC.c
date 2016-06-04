@@ -220,6 +220,7 @@ CY_ISR(ISR_PWM_TC_Interrupt)
                          ((thm_k - LENGTH_TABLEdiv3) % LENGTH_TABLE),
                          ((thm_k + LENGTH_TABLEdiv3) % LENGTH_TABLE)};
   // PWM_A_ReadCounter() = 0x8B here.
+  
   // volatile uint cnt = PWM_A_ReadCounter();
   // asm("nop");
   

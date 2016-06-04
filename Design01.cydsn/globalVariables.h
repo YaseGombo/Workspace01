@@ -74,6 +74,9 @@ void Set_angleParams_Backward();
 #define PERIOD_COUNTER_HALL 65536L
 #define COMPARE_COUNTER_HALL 50000
 
+#define VBAT_NORMAL 0xA3A3  // = 7.20 V
+#define VBAT_MAX    0xFFFF  // = 11.26 V
+
 /* For measurement of CPU cycles */
 #ifdef DEBUG
 #define SYSTICK_MAXVAL 0x00FFFFFFUL

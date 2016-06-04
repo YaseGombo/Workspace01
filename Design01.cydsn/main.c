@@ -121,6 +121,8 @@ int main()
     UART_1_Start();
     ISR_Hall_Start();
     ISR_PWM_TC_Start();
+    ADC_DelSig_1_Start();
+    ADC_DelSig_1_StartConvert();
     
     Control_Reg_PWM_Reset_Write(1);
     PWM_A_Start();

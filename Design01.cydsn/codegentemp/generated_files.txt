@@ -79,8 +79,32 @@
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Counter_16.c" value="ARM_C_FILE;Counter_16" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Counter_16.h" value="NONE;Counter_16" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Counter_16_PM.c" value="ARM_C_FILE;Counter_16" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1.c" value="ARM_C_FILE;ADC_DelSig_1" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1.h" value="NONE;ADC_DelSig_1" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_PM.c" value="ARM_C_FILE;ADC_DelSig_1" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_INT.c" value="ARM_C_FILE;ADC_DelSig_1" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_VBAT_aliases.h" value="NONE;Pin_VBAT" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_VBAT.c" value="ARM_C_FILE;Pin_VBAT" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_VBAT.h" value="NONE;Pin_VBAT" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_SW_aliases.h" value="NONE;Pin_SW" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_SW.c" value="ARM_C_FILE;Pin_SW" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_SW.h" value="NONE;Pin_SW" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_LED_aliases.h" value="NONE;Pin_LED" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_LED.c" value="ARM_C_FILE;Pin_LED" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_LED.h" value="NONE;Pin_LED" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\UART_1_IntClock.c" value="ARM_C_FILE;UART_1_IntClock" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\UART_1_IntClock.h" value="NONE;UART_1_IntClock" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_AMux.c" value="ARM_C_FILE;ADC_DelSig_1_AMux" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_AMux.h" value="NONE;ADC_DelSig_1_AMux" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_Ext_CP_Clk.c" value="ARM_C_FILE;ADC_DelSig_1_Ext_CP_Clk" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_Ext_CP_Clk.h" value="NONE;ADC_DelSig_1_Ext_CP_Clk" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_Bypass_P03_aliases.h" value="NONE;ADC_DelSig_1_Bypass_P03" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_Bypass_P03.c" value="ARM_C_FILE;ADC_DelSig_1_Bypass_P03" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_Bypass_P03.h" value="NONE;ADC_DelSig_1_Bypass_P03" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_IRQ.c" value="ARM_C_FILE;ADC_DelSig_1_IRQ" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_IRQ.h" value="NONE;ADC_DelSig_1_IRQ" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_theACLK.c" value="ARM_C_FILE;ADC_DelSig_1_theACLK" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_theACLK.h" value="NONE;ADC_DelSig_1_theACLK" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\cycodeshareimport.ld" value="NONE;" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\cycodeshareexport.ld" value="NONE;" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\cycodeshareimport.scat" value="NONE;" />

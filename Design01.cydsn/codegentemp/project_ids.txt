@@ -1,6 +1,8 @@
-E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\Design01.cyprj|2535ed97-fcdb-4c9a-9b97-9eb94a0eb40d
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|09ae90df-249d-4d7a-8abe-fd7e313a7ab7
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b312f2e4-680f-42fa-85af-dd46725f9261
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|335e3791-90d3-4b95-867b-d24929c9f5b5
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ff2bf004-209e-4906-9154-b0cef002b061
 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c2433afb-de50-42c5-9f46-a5fb5eb1afaa
-E:\KI\Documents\PSoC Creator\Workspace01\PWM3.cylib\PWM3.cyprj|9c87df8f-ad4a-4f11-9cc4-98b0532126e4
+E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\Design01.cyprj|d7428b84-9eec-4876-8ac6-a03f5479cf06
+E:\KI\Documents\PSoC Creator\Workspace01\PWM3.cylib\PWM3.cyprj|3031979d-a01d-4b33-9a9f-67ebc3a3adc1
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|d6c35241-7bcd-4d0d-9e2a-d4700fae4180
