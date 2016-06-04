@@ -45,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# ========
+# PSoC
+# ========
+# Log files
+*.log
+*.rpt
+# Temp directry
+*.cydsn/codegnetemp/*
+# Results
+*.cydsn/DP8051/*
+*.cydsn/CortexM3/*
