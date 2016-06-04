@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Design01\Generated_Source\PSoC5\PWM_C_U">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Design01\Generated_Source\PSoC5\ISR_PWM_TC\ISR_PWM_TC.c">
 <ExpandedNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\Design01</v>
@@ -271,51 +271,6 @@
 <VisibleNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\Design01</v>
-<v>Workspace01\Design01\CortexM3</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_PWM_Reset.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_PWM_Reset_PM.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_16.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_16_PM.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_Hall.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_Hall_PM.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CydwClock_1.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ISR_Hall.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_Hall_0.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_Hall_1.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_Hall_2.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_TC.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A_L.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A_PM.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A_U.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_B.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_B_L.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_B_PM.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_B_U.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_C.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_C_L.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_C_PM.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_C_U.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Status_Reg_Hall.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_BOOT.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_INT.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_IntClock.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
