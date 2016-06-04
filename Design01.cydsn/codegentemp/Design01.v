@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 06/04/2016 at 18:02
+// 06/04/2016 at 23:47
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -2596,6 +2596,13 @@ module top ;
 
 
     assign Net_6523 = ~Net_6524;
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		ISR_ADC_DelSig
+		 (.int_signal(Net_6513));
+
 
 
 

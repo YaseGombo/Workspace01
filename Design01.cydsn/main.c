@@ -46,6 +46,7 @@ const uint8 table_hallState[8] = {  // bit2:sensorA(green), bit1:sensorB(white),
 };
 
 uint16 status_error;
+int32 vbat_adc;
 
 HallHist hallHist;
 AngleParams angleParams;
@@ -121,7 +122,11 @@ int main()
     UART_1_Start();
     ISR_Hall_Start();
     ISR_PWM_TC_Start();
+    
     ADC_DelSig_1_Start();
+    ADC_DelSig_1_IRQ_Disable();
+    vbat_adc = ADC_DelSig_1_Read32();
+    ADC_DelSig_1_IRQ_Enable();
     ADC_DelSig_1_StartConvert();
     
     Control_Reg_PWM_Reset_Write(1);

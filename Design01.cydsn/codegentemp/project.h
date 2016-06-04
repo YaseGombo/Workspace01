@@ -56,6 +56,7 @@
 #include "Pin_SW.h"
 #include "Pin_LED_aliases.h"
 #include "Pin_LED.h"
+#include "ISR_ADC_DelSig.h"
 #include "UART_1_IntClock.h"
 #include "ADC_DelSig_1_AMux.h"
 #include "ADC_DelSig_1_Ext_CP_Clk.h"

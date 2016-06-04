@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 06/04/2016 18:02:31
+-- Generated: 06/04/2016 23:47:44
 -- PSoC Creator  3.3 SP2
 
 ENTITY Design01 IS
@@ -3493,6 +3493,13 @@ BEGIN
             ext_start => __ONE__,
             modrst => \ADC_DelSig_1:mod_reset\,
             interrupt => Net_6513);
+
+    ISR_ADC_DelSig:interrupt
+        GENERIC MAP(
+            int_type => "10")
+        PORT MAP(
+            interrupt => Net_6513,
+            clock => ClockBlock_BUS_CLK);
 
     \UART_1:BUART:txn\:macrocell
         GENERIC MAP(
