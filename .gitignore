@@ -57,4 +57,9 @@ Temporary Items
 # Results
 *.cydsn/DP8051/*
 *.cydsn/CortexM3/*
+
+# ========
+# vim
+# ========
+# Backup files
 *.un~
