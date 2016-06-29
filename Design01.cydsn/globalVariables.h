@@ -22,8 +22,8 @@ extern uint16 status_error;
 
 #define LENGTH_TABLE 1536
 #define LENGTH_TABLEdiv3 512
-extern int16 const table_pphi[LENGTH_TABLE];  // Max value: 4096
-extern int16 const table_pLpphi[LENGTH_TABLE];  // Max value: 4096
+extern int16 const table_pphi[LENGTH_TABLE];  // Min:0, Max:4494
+extern int16 const table_p_Lpphi[LENGTH_TABLE];  // Min:-868, Max:951
 extern const int8 table_phase[8];
 extern const uint8 table_hallState[8];
 
@@ -70,19 +70,25 @@ void Set_angleParams_Center();
 void Set_angleParams_Forward();
 void Set_angleParams_Backward();
 
-#define PERIOD_PWM 256
+#define PRECISION_PWM 256
+
 #define PERIOD_COUNTER_HALL 65536L
 #define COMPARE_COUNTER_HALL 50000
 
-extern int32 vbat_adc;
+extern int32 vbat_adc, vbat_ave;
+extern int32 inv_vbat;
 #define VBAT_NORMAL 0xA3A3  // = 7.20 V
 #define VBAT_MAX    0xFFFF  // = 11.26 V
+#define OFFSET_INVVBAT 12
+#define VBAT_NORMALwithOFFSET_INVVBAT 171585164L  // = VBAT_NORMAL * OFFSET_INVVBAT
 
 /* For measurement of CPU cycles */
 #ifdef DEBUG
 #define SYSTICK_MAXVAL 0x00FFFFFFUL
 extern volatile uint32 SysCntVal;
 #endif
+
+extern int32 lambda;
 
 /*
 #ifdef DEBUG

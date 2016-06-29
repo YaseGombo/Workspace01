@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: project.h
 * 
-* PSoC Creator  3.3 SP2
+* PSoC Creator  3.3 CP3
 *
 * Description:
 * It contains references to all generated header files and should not be modified.
@@ -56,7 +56,6 @@
 #include "Pin_SW.h"
 #include "Pin_LED_aliases.h"
 #include "Pin_LED.h"
-#include "ISR_ADC_DelSig.h"
 #include "UART_1_IntClock.h"
 #include "ADC_DelSig_1_AMux.h"
 #include "ADC_DelSig_1_Ext_CP_Clk.h"

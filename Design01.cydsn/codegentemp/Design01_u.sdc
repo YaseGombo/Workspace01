@@ -1,3 +1,3 @@
 # Component constraints for E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\TopDesign\TopDesign.cysch
 # Project: E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\Design01.cyprj
-# Date: Sat, 04 Jun 2016 14:47:41 GMT
+# Date: Wed, 29 Jun 2016 12:01:34 GMT

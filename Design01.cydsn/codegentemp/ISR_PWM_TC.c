@@ -39,17 +39,24 @@
 #define MY_PWM_B_WRITECOMPARE(compare) (CY_SET_REG16(PWM_B_COMPARE1_LSB_PTR, compare))
 #define MY_PWM_C_WRITECOMPARE(compare) (CY_SET_REG16(PWM_C_COMPARE1_LSB_PTR, compare))
 
-#define DELAY_ONE_PULSE 32    // = (PERIOD_PWM * 2) / (PWM_CLK / CNT_HALL_CLK);
+#define DELAY_ONE_PULSE 32    // = (PRECISION_PWM * 2) / (PWM_CLK / CNT_HALL_CLK);
 #define DELAY_A 20  // = round( 0x8B / (BUS_CLK / CNT_HALL_CLK)) + DELAY_ONE_PULSE / 2;
 // #define DELAY_B 48  // = round((clock_steps_B) / (BUS_CLK / CNT_HALL_CLK)) + DELAY_ONE_PULSE / 2;
 // #define DELAY_C 49  // = round((clock_steps_C) / (BUS_CLK / CNT_HALL_CLK)) + DELAY_ONE_PULSE / 2;
+
+#define OFFSET_FIXEDPOINT 12
+#define OFFSET_KPPHI  16
+#define OFFSET_PWM 8  // = log2(PRECISION_PWM)
+
+#define C_PPHI 12746
+#define C_P_LPPHI 4357
 
 int32 thm0;
 int32 wm0;
 int32 am0;
 uint32 time_next;
 
-uint16 val_abc[3] = {0, 0, 0};
+uint16 pwm_abc[3] = {0, 0, 0};
 /* `#END` */
 
 #ifndef CYINT_IRQ_BASE
@@ -191,11 +198,11 @@ CY_ISR(ISR_PWM_TC_Interrupt)
   // 24 cycles elapsed here
   uint16 tmp_time = Counter_Hall_ReadCounter();
   // ^Consume 16 cycles
-  MY_PWM_A_WRITECOMPARE(val_abc[0]);  // PWM_A_WriteCompare(val_abc[0]);
+  MY_PWM_A_WRITECOMPARE(pwm_abc[0]);  // PWM_A_WriteCompare(pwm_abc[0]);
   // ^Consume 8 cycles
-  MY_PWM_B_WRITECOMPARE(val_abc[1]);  // PWM_B_WriteCompare(val_abc[1]);
+  MY_PWM_B_WRITECOMPARE(pwm_abc[1]);  // PWM_B_WriteCompare(pwm_abc[1]);
   // ^Consume 7 cycles
-  MY_PWM_C_WRITECOMPARE(val_abc[2]);  // PWM_C_WriteCompare(val_abc[2]);
+  MY_PWM_C_WRITECOMPARE(pwm_abc[2]);  // PWM_C_WriteCompare(pwm_abc[2]);
   // ^Consume 6 cycles
 
   if(angleParams.updated){
@@ -219,25 +226,21 @@ CY_ISR(ISR_PWM_TC_Interrupt)
   uint16 thm_k_abc[3] = {(thm_k % LENGTH_TABLE),
                          ((thm_k - LENGTH_TABLEdiv3) % LENGTH_TABLE),
                          ((thm_k + LENGTH_TABLEdiv3) % LENGTH_TABLE)};
-  // PWM_A_ReadCounter() = 0x8B here.
+  // PWM_A_ReadCounter() = 0x47 here. ( = about 0x8E cycles)
+
   
+  int32 wm2pphi = wm + ((C_PPHI * lambda) >> OFFSET_FIXEDPOINT);
+  int32 wm2p_Lpphi_lambda = ((wm + ((C_P_LPPHI * lambda) >> OFFSET_FIXEDPOINT)) * lambda) >> OFFSET_FIXEDPOINT;
+  
+  int i;
+  for(i = 0; i < 3; i++){
+    int32 vpwm_i = (wm2pphi * table_pphi[thm_k_abc[i]] + wm2p_Lpphi_lambda * table_p_Lpphi[thm_k_abc[i]]) >> OFFSET_KPPHI;
+    pwm_abc[i] = (inv_vbat * vpwm_i) >> (OFFSET_FIXEDPOINT + OFFSET_INVVBAT - OFFSET_PWM);
+  }
+  
+  // PWM_A_ReadCounter() = 0x86-0x88 here. (First cycle: 0xC5)
   // volatile uint cnt = PWM_A_ReadCounter();
   // asm("nop");
-  
-  /*
-  int i;
-  int32 temp_abc;
-  uint16 temp_thm;
-
-  if(++thm == LENGTH_TABLE) thm = 0;
-  for(i = 0; i < 3; i++){
-    temp_thm = thm + LENGTH_TABLE / 3 * i;
-    if(temp_thm >= LENGTH_TABLE) temp_thm -= LENGTH_TABLE;
-    temp_abc = table_pphi[temp_thm];
-    temp_abc *= 255;
-    val_abc[i] = (uint16)(temp_abc / 0x1000);
-  }
-  */
 
   PWM_A_ReadStatusRegister();
     /* `#END` */

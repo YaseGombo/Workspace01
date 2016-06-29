@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Design01\Generated_Source\PSoC5\ISR_ADC_DelSig\ISR_ADC_DelSig.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Design01\Design01.cydwr">
 <ExpandedNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\Design01</v>
@@ -77,9 +77,6 @@
 <v>Workspace01\Design01\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\CydwClock_1\CydwClock_1.c</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\CydwClock_1\CydwClock_1.h</v>
-<v>Workspace01\Design01\Generated_Source\PSoC5\ISR_ADC_DelSig</v>
-<v>Workspace01\Design01\Generated_Source\PSoC5\ISR_ADC_DelSig\ISR_ADC_DelSig.c</v>
-<v>Workspace01\Design01\Generated_Source\PSoC5\ISR_ADC_DelSig\ISR_ADC_DelSig.h</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\ISR_Hall</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\ISR_Hall\ISR_Hall.c</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\ISR_Hall\ISR_Hall.h</v>
@@ -169,6 +166,70 @@
 <v>Workspace01\Design01\Generated_Source\PSoC5\cyfitterrv.inc</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\cymetadata.c</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\project.h</v>
+<v>Workspace01\Design02\TopDesign</v>
+<v>Workspace01\Design02\Design02.cydwr</v>
+<v>Workspace01\Design02\Header Files</v>
+<v>Workspace01\Design02\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\Design02\Source Files</v>
+<v>Workspace01\Design02\Source Files\main.c</v>
+<v>Workspace01\Design02\Generated_Source</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1\UART_1.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1\UART_1.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1\UART_1_BOOT.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1\UART_1_INT.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1\UART_1_PM.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1_IntClock</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydevice.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cyfitter.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\cymetadata.c</v>
+<v>Workspace01\Design02\Generated_Source\PSoC5\project.h</v>
 <v>Workspace01\PWM3</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -198,9 +259,6 @@
 <v>Workspace01\Design01\Generated_Source\PSoC5\Counter_Hall</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\cy_boot</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\CydwClock_1</v>
-<v>Workspace01\Design01\Generated_Source\PSoC5\ISR_ADC_DelSig</v>
-<v>Workspace01\Design01\Generated_Source\PSoC5\ISR_ADC_DelSig\ISR_ADC_DelSig.c</v>
-<v>Workspace01\Design01\Generated_Source\PSoC5\ISR_ADC_DelSig\ISR_ADC_DelSig.h</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\ISR_Hall</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\ISR_Hall\ISR_Hall.c</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\ISR_Hall\ISR_Hall.h</v>
@@ -219,6 +277,9 @@
 <v>Workspace01\Design01\Generated_Source\PSoC5\Pin_SW\Pin_SW.h</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\Pin_SW\Pin_SW_aliases.h</v>
 <v>Workspace01\Design01\Generated_Source\PSoC5\Pin_TC</v>
+<v>Workspace01\Design01\Generated_Source\PSoC5\Pin_VBAT</v>
+<v>Workspace01\Design01\Generated_Source\PSoC5\Pin_VBAT\Pin_VBAT.c</v>
+<v>Workspace01\Design01\Generated_Source\PSoC5\Pin_VBAT\Pin_VBAT.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Design01\TopDesign\TopDesign.cysch">
@@ -228,6 +289,9 @@
 <v>Workspace01\Design01\TopDesign</v>
 <v>Workspace01\Design01\TopDesign\TopDesign.cysch</v>
 <v>Workspace01\Design01\TopDesign\TopDesign.cysym</v>
+<v>Workspace01\Design02</v>
+<v>Workspace01\Design02\TopDesign</v>
+<v>Workspace01\Design02\TopDesign\TopDesign.cysch</v>
 <v>Workspace01\PWM3</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -236,6 +300,9 @@
 <v>Workspace01\Design01\TopDesign</v>
 <v>Workspace01\Design01\TopDesign\TopDesign.cysch</v>
 <v>Workspace01\Design01\TopDesign\TopDesign.cysym</v>
+<v>Workspace01\Design02</v>
+<v>Workspace01\Design02\TopDesign</v>
+<v>Workspace01\Design02\TopDesign\TopDesign.cysch</v>
 <v>Workspace01\PWM3</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
@@ -272,7 +339,6 @@
 <v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
 <v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
 <v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ISR_ADC_DelSig.lst</v>
 <v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ISR_Hall.lst</v>
 <v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 <v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_Hall_0.lst</v>
@@ -306,6 +372,33 @@
 <v>Workspace01\Design01\Design01.gpdsc</v>
 <v>Workspace01\Design01\Design01.rpt</v>
 <v>Workspace01\Design01\Design01_timing.html</v>
+<v>Workspace01\Design02</v>
+<v>Workspace01\Design02\CortexM3</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_INT.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_PM.lst</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Design02.elf</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Design02.hex</v>
+<v>Workspace01\Design02\CortexM3\ARM_GCC_493\Debug\Design02.map</v>
+<v>Workspace01\Design02\Design02.gpdsc</v>
+<v>Workspace01\Design02\Design02.rpt</v>
+<v>Workspace01\Design02\Design02_timing.html</v>
 <v>Workspace01\PWM3</v>
 <v>Workspace01\PWM3\CortexM0</v>
 <v>Workspace01\PWM3\CortexM0\ARM_GCC_493</v>
@@ -314,6 +407,51 @@
 <VisibleNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\Design01</v>
+<v>Workspace01\Design01\CortexM3</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_Bypass_P03.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_PWM_Reset.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_PWM_Reset_PM.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_16.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_16_PM.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_Hall.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Counter_Hall_PM.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CydwClock_1.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\ISR_Hall.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_Hall_0.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_Hall_1.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_Hall_2.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_LED.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_SW.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_TC.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_VBAT.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A_L.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A_PM.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_A_U.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_B.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_B_L.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_493\Debug\Listing Files\PWM_B_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -348,6 +486,14 @@
 <v>Workspace01\Design01\PWM_v3_30</v>
 <v>Workspace01\Design01\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>Workspace01\Design01\UART_v2_50.pdf</v>
+<v>Workspace01\Design02</v>
+<v>Workspace01\Design02\PSoC 5 Architecture TRM</v>
+<v>Workspace01\Design02\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Design02\System Reference Guides</v>
+<v>Workspace01\Design02\System Reference Guides\cy_boot_v5_40</v>
+<v>Workspace01\Design02\cy_pins_v2_20</v>
+<v>Workspace01\Design02\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Design02\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Workspace01</v>
@@ -375,6 +521,14 @@
 <v>Workspace01\Design01\PWM_v3_30</v>
 <v>Workspace01\Design01\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>Workspace01\Design01\UART_v2_50.pdf</v>
+<v>Workspace01\Design02</v>
+<v>Workspace01\Design02\PSoC 5 Architecture TRM</v>
+<v>Workspace01\Design02\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Design02\System Reference Guides</v>
+<v>Workspace01\Design02\System Reference Guides\cy_boot_v5_40</v>
+<v>Workspace01\Design02\cy_pins_v2_20</v>
+<v>Workspace01\Design02\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Design02\UART_v2_50.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -415,6 +569,11 @@
 <name v=".\Design01.cydsn\Generated_Source\PSoC5\ISR_PWM_TC.c" />
 <name v=".\Design01.cydsn\Generated_Source\PSoC5\CydwClock_1.c" />
 <name v=".\Design01.cydsn\Generated_Source\PSoC5\Counter_16.c" />
+<name v=".\Design01.cydsn\Generated_Source\PSoC5\ISR_ADC_DelSig.c" />
+<name v=".\Design01.cydsn\Generated_Source\PSoC5\ADC_DelSig_1.c" />
+<name v=".\Design01.cydsn\Design01.rpt" />
+<name v=".\Design02.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Design02.cydsn\main.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

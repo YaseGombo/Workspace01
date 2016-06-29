@@ -25,7 +25,9 @@
 *   #START and #END tags
 *******************************************************************************/
 /* `#START ADC_SYS_VAR`  */
-
+#include "globalVariables.h"
+  
+#define COEFF_AVE 2048  // 2048 / 2000[sps] ~ 1.024[s]
 /* `#END`  */
 
 #if(ADC_DelSig_1_IRQ_REMOVE == 0u)
@@ -60,7 +62,18 @@
         *  - add user ISR code between the following #START and #END tags
         **************************************************************************/
         /* `#START MAIN_ADC_ISR1`  */
-
+        
+    		vbat_adc = ADC_DelSig_1_GetResult32();
+    		int32 delta_vbat = vbat_adc - vbat_ave;
+    		if(delta_vbat > 0){
+    			vbat_ave += (delta_vbat + COEFF_AVE) / COEFF_AVE;
+    		} else if(delta_vbat < 0){
+    			vbat_ave += (delta_vbat - COEFF_AVE) / COEFF_AVE;
+    		} else {  // = 0
+    			// vbat_adc += 0;
+    		}
+    		inv_vbat = VBAT_NORMALwithOFFSET_INVVBAT / vbat_ave;
+        
         /* `#END`  */
         
         /* Stop the conversion if conversion mode is single sample and resolution
