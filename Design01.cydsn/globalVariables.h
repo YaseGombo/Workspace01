@@ -64,7 +64,9 @@ extern HallHist hallHist;
 #define THETA_HIS     0x00111111L // = 1deg
 
 #define BITs_BIAS_ACC 20
+#define BIAS_ACC  0x100000L
 // #define BITs_BIAS_OMEGA 0
+// #define BIAS_OMEGA 1
 
 void Set_angleParams_Center();
 void Set_angleParams_Forward();
@@ -80,7 +82,8 @@ extern int32 inv_vbat;
 #define VBAT_NORMAL 0xA3A3  // = 7.20 V
 #define VBAT_MAX    0xFFFF  // = 11.26 V
 #define OFFSET_INVVBAT 12
-#define VBAT_NORMALwithOFFSET_INVVBAT 171585164L  // = VBAT_NORMAL * OFFSET_INVVBAT
+#define BIAS_INVVBAT  0x1000L
+#define VBAT_NORMALwithOFFSET_INVVBAT 171585164L  // = VBAT_NORMAL * BIAS_INVVBAT
 
 /* For measurement of CPU cycles */
 #ifdef DEBUG
@@ -89,16 +92,11 @@ extern volatile uint32 SysCntVal;
 #endif
 
 extern int32 lambda;
+#define PRECISION_LAMBDA 4096
 
-/*
-#ifdef DEBUG
-SysTick_Config(SYSTICK_MAXVAL);
-#endif
+inline uint32 pmod32(int32 i, uint32 n);
+inline uint16 pmod16(int16 i, uint16 n);
+inline unsigned int pmodi(int i, unsigned int n);
 
-#ifdef DEBUG
-SysCntVal = SYSTICK_MAXVAL - (SysTick->VAL);
-asm("nop");
-#endif
-*/
 #endif  // GLOBAL_VARIABLES_H
 /* [] END OF FILE */

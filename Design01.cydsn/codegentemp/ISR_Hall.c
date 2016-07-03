@@ -197,11 +197,11 @@ CY_ISR(ISR_Hall_Interrupt)
     // Motor rotation is very slow
     Set_angleParams_Center();
   } else {
-    switch((hallHist.phase[0] - hallHist.phase[1]) % 6){
+    switch(pmodi((hallHist.phase[0] - hallHist.phase[1]), 6)){
     case 1:
-      switch((hallHist.phase[1] - hallHist.phase[2]) % 6){
+      switch(pmodi((hallHist.phase[1] - hallHist.phase[2]), 6)){
       case 1:
-        switch((hallHist.phase[2] - hallHist.phase[3]) % 6){
+        switch(pmodi((hallHist.phase[2] - hallHist.phase[3]), 6)){
         case 1:
           Set_angleParams_Forward();
           break;
@@ -216,9 +216,9 @@ CY_ISR(ISR_Hall_Interrupt)
       }
       break;
     case 5:
-      switch((hallHist.phase[1] - hallHist.phase[2]) % 6){
+      switch(pmodi((hallHist.phase[1] - hallHist.phase[2]), 6)){
       case 5:
-        switch((hallHist.phase[2] - hallHist.phase[3]) % 6){
+        switch(pmodi((hallHist.phase[2] - hallHist.phase[3]), 6)){
         case 5:
           Set_angleParams_Backward();
           break;
