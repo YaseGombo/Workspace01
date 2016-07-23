@@ -85,18 +85,19 @@ extern int32 inv_vbat;
 #define BIAS_INVVBAT  0x1000L
 #define VBAT_NORMALwithOFFSET_INVVBAT 171585164L  // = VBAT_NORMAL * BIAS_INVVBAT
 
+extern int32 lambda;
+#define PRECISION_LAMBDA 4096
+
+inline uint32 pmod32(int32 i, int32 n);
+inline uint16 pmod16(int16 i, int16 n);
+inline unsigned int pmodi(int i, int n);
+
 /* For measurement of CPU cycles */
 #ifdef DEBUG
 #define SYSTICK_MAXVAL 0x00FFFFFFUL
 extern volatile uint32 SysCntVal;
+extern volatile uint32 debugregs[4];
 #endif
-
-extern int32 lambda;
-#define PRECISION_LAMBDA 4096
-
-inline uint32 pmod32(int32 i, uint32 n);
-inline uint16 pmod16(int16 i, uint16 n);
-inline unsigned int pmodi(int i, unsigned int n);
 
 #endif  // GLOBAL_VARIABLES_H
 /* [] END OF FILE */

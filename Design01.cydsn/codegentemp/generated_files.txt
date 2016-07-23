@@ -92,6 +92,9 @@
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_LED_aliases.h" value="NONE;Pin_LED" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_LED.c" value="ARM_C_FILE;Pin_LED" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_LED.h" value="NONE;Pin_LED" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Control_Reg_Debug.h" value="NONE;Control_Reg_Debug" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Control_Reg_Debug.c" value="ARM_C_FILE;Control_Reg_Debug" />
+  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Control_Reg_Debug_PM.c" value="ARM_C_FILE;Control_Reg_Debug" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\UART_1_IntClock.c" value="ARM_C_FILE;UART_1_IntClock" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\UART_1_IntClock.h" value="NONE;UART_1_IntClock" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ADC_DelSig_1_AMux.c" value="ARM_C_FILE;ADC_DelSig_1_AMux" />

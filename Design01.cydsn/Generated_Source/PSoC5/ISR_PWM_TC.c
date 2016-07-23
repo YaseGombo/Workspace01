@@ -54,12 +54,9 @@
 #define C_PPHI 12746
 #define C_P_LPPHI 4357
 
-int32 thm0;
-int32 wm0;
-int32 am0;
-uint32 time_next;
-
-uint16 pwm_abc[3] = {0, 0, 0};
+volatile int32 thm0, wm0, am0;
+volatile uint32 time_next;
+volatile uint16 pwm_abc[3] = {0, 0, 0};
 /* `#END` */
 
 #ifndef CYINT_IRQ_BASE
@@ -200,40 +197,54 @@ CY_ISR(ISR_PWM_TC_Interrupt)
   
   // about -48 cycles
   MY_PWM_A_WRITECOMPARE(pwm_abc[0]);  // PWM_A_WriteCompare(pwm_abc[0]);
-  //SysTick_Config(SYSTICK_MAXVAL);
+  /*
+  #ifdef DEBUG
+  SysTick_Config(SYSTICK_MAXVAL);
+  #endif
+  */
   // about -36 cycles
   MY_PWM_B_WRITECOMPARE(pwm_abc[1]);  // PWM_B_WriteCompare(pwm_abc[1]);
   // about -25 cycles
   MY_PWM_C_WRITECOMPARE(pwm_abc[2]);  // PWM_C_WriteCompare(pwm_abc[2]);
   // about -21 cycles
   
-  uint16 tmp_time = Counter_Hall_ReadCounter();
-  //SysCntVal = SYSTICK_MAXVAL - (SysTick->VAL); 
-  //asm("nop");
-  
   if(angleParams.updated){
+    /*
+    #ifdef DEBUG
+    SysCntVal = SYSTICK_MAXVAL - (SysTick->VAL); 
+    asm("nop");
+    #endif
+    */
+    uint16 tmp_time = Counter_Hall_ReadCounter();
+    
     thm0 = angleParams.thm0;
     wm0 = angleParams.wm0;
     am0 = angleParams.am0;
+    
+    // thm0 =  hallHist.phase[0] * THETA_60DEG;
+    // wm0 = 0x4093L;
+    // am0 = 0;
     angleParams.updated = 0;
     time_next = tmp_time + (DELAY_ONE_A_HALF_PULSE - DELAY_B);
+    //time_next = 0;
   } else {
-    time_next += DELAY_ONE_PULSE;
+    if(time_next < (LONG_MAX / 2L)) time_next += DELAY_ONE_PULSE;
   }
   
   /* thm = thm0 + (wm0 * dt) / BIAS_OMEGA + (am0/2 * dt^2) / BIAS_ACC;
    *     = thm0 + (wm0 * dt) + (am0 * dt^2) / (2^21);   (21 = 16 + 5)
    * Split the division (/ (2^21)) into two operations (/ (2^16) and / (2^5)) to avoid overflow and rounding error.
    */ 
-  int32 thm = (((((am0 * time_next) >> 16) * time_next) >> 5)  // BIAS_ACC / 0x10000L * 2L = 0x20L
-                   + wm0 * time_next) + thm0;
-  int32 wm = ((am0 * time_next) >> BITs_BIAS_ACC) + wm0;
-
+  // int32 thm = (((((am0 * time_next) >> 16) * time_next) >> 5)  // BIAS_ACC / 0x10000L * 2L = 0x20L
+  //                + wm0 * time_next) + thm0;
+  // int32 wm = ((am0 * time_next) >> BITs_BIAS_ACC) + wm0;
+  int32 thm = (wm0 * time_next) + thm0;
+  int32 wm = wm0;
+  
   int thm_k = (int)(thm >> 18); // THTA_360DEG / LENGTH_TABLE = 2^18;
   int thm_k_abc[3] = {pmod32(thm_k, LENGTH_TABLE),
                          pmod32((thm_k - LENGTH_TABLEdiv3), LENGTH_TABLE),
                          pmod32((thm_k + LENGTH_TABLEdiv3), LENGTH_TABLE)};
-  
   
   int32 wm2pphi = wm + ((C_PPHI * lambda) >>  OFFSET_FIXEDPOINT);
   int32 wm2p_Lpphi_lambda = ((wm + ((C_P_LPPHI * lambda) >> OFFSET_FIXEDPOINT)) * lambda) >> OFFSET_FIXEDPOINT;

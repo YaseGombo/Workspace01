@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Jul 03 17:38:59 2016
+--	Sun Jul 24 00:43:12 2016
 --
 
 USE cypress.cypress.all;
@@ -1711,12 +1711,12 @@ SIGNAL tmpFB_0__PWM_A_U_net_0 : bit;
 SIGNAL tmpIO_0__PWM_A_U_net_0 : bit;
 TERMINAL tmpSIOVREF__PWM_A_U_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__PWM_A_U_net_0 : bit;
-SIGNAL Net_6240 : bit;
+SIGNAL Net_6637 : bit;
 SIGNAL \EdgeDetect_2:last\ : bit;
-SIGNAL Net_6040 : bit;
+SIGNAL Net_6704 : bit;
 SIGNAL Net_4601 : bit;
 SIGNAL \EdgeDetect_0:last\ : bit;
-SIGNAL Net_6041 : bit;
+SIGNAL Net_6700 : bit;
 SIGNAL Net_4672 : bit;
 SIGNAL \PWM_A:PWMUDB:km_run\ : bit;
 SIGNAL \PWM_A:PWMUDB:min_kill_reg\ : bit;
@@ -2376,17 +2376,20 @@ SIGNAL \PWM_A:Net_113\ : bit;
 SIGNAL \PWM_A:Net_107\ : bit;
 SIGNAL \PWM_A:Net_114\ : bit;
 SIGNAL \EdgeDetect_1:last\ : bit;
-SIGNAL Net_6135 : bit;
+SIGNAL Net_6701 : bit;
 SIGNAL Net_4673 : bit;
 SIGNAL tmpOE__Pin_Hall_2_net_0 : bit;
+SIGNAL Net_6040 : bit;
 SIGNAL tmpIO_0__Pin_Hall_2_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_Hall_2_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_Hall_2_net_0 : bit;
 SIGNAL tmpOE__Pin_Hall_1_net_0 : bit;
+SIGNAL Net_6702 : bit;
 SIGNAL tmpIO_0__Pin_Hall_1_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_Hall_1_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_Hall_1_net_0 : bit;
 SIGNAL tmpOE__Pin_Hall_0_net_0 : bit;
+SIGNAL Net_6703 : bit;
 SIGNAL tmpIO_0__Pin_Hall_0_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_Hall_0_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_Hall_0_net_0 : bit;
@@ -2400,7 +2403,7 @@ SIGNAL \Status_Reg_Hall:status_6\ : bit;
 SIGNAL \Status_Reg_Hall:status_7\ : bit;
 SIGNAL Net_4691 : bit;
 SIGNAL \Counter_Hall:Net_43\ : bit;
-SIGNAL Net_6424 : bit;
+SIGNAL Net_6651 : bit;
 SIGNAL \Counter_Hall:Net_49\ : bit;
 SIGNAL \Counter_Hall:Net_82\ : bit;
 SIGNAL \Counter_Hall:Net_89\ : bit;
@@ -2424,7 +2427,7 @@ SIGNAL \Counter_Hall:CounterUDB:control_1\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:control_0\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:ctrl_enable\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:prevCapture\ : bit;
-SIGNAL Net_6336 : bit;
+SIGNAL Net_6733 : bit;
 SIGNAL \Counter_Hall:CounterUDB:capt_rising\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:capt_falling\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:capt_either_edge\ : bit;
@@ -2459,9 +2462,9 @@ SIGNAL \Counter_Hall:CounterUDB:cmp_out_i\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:cmp_less\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:prevCompare\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:cmp_out_reg_i\ : bit;
-SIGNAL Net_6425 : bit;
+SIGNAL Net_6652 : bit;
 SIGNAL \Counter_Hall:CounterUDB:count_stored_i\ : bit;
-SIGNAL Net_6430 : bit;
+SIGNAL Net_6604 : bit;
 SIGNAL \Counter_Hall:CounterUDB:count_enable\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:cs_addr_2\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:cs_addr_1\ : bit;
@@ -2588,13 +2591,13 @@ SIGNAL \Counter_Hall:CounterUDB:sC16:counterdp:f1_bus_stat_reg_1\ : bit;
 ATTRIBUTE port_state_att of \Counter_Hall:CounterUDB:sC16:counterdp:f1_bus_stat_reg_1\:SIGNAL IS 2;
 SIGNAL \Counter_Hall:CounterUDB:sC16:counterdp:f1_blk_stat_reg_1\ : bit;
 ATTRIBUTE port_state_att of \Counter_Hall:CounterUDB:sC16:counterdp:f1_blk_stat_reg_1\:SIGNAL IS 2;
+SIGNAL Net_6430 : bit;
 SIGNAL \Counter_16:Net_82\ : bit;
 SIGNAL \Counter_16:Net_91\ : bit;
 SIGNAL \Counter_16:Net_48\ : bit;
 SIGNAL \Counter_16:Net_47\ : bit;
 SIGNAL \Counter_16:Net_42\ : bit;
-SIGNAL Net_6460 : bit;
-SIGNAL Net_6419 : bit;
+SIGNAL Net_6684 : bit;
 SIGNAL \Counter_16:Net_89\ : bit;
 SIGNAL \Counter_16:Net_95\ : bit;
 SIGNAL \Counter_16:Net_102\ : bit;
@@ -2653,11 +2656,41 @@ SIGNAL tmpIO_0__Pin_SW_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_SW_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_SW_net_0 : bit;
 SIGNAL tmpOE__Pin_LED_net_0 : bit;
-SIGNAL Net_6523 : bit;
+SIGNAL Net_6726 : bit;
 SIGNAL tmpFB_0__Pin_LED_net_0 : bit;
 SIGNAL tmpIO_0__Pin_LED_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_LED_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_LED_net_0 : bit;
+SIGNAL Net_6727 : bit;
+SIGNAL cydff_1 : bit;
+SIGNAL cydff_2 : bit;
+SIGNAL cydff_3 : bit;
+SIGNAL \Control_Reg_Debug:clk\ : bit;
+SIGNAL \Control_Reg_Debug:rst\ : bit;
+SIGNAL Net_6728 : bit;
+SIGNAL \Control_Reg_Debug:control_out_0\ : bit;
+SIGNAL Net_6716 : bit;
+SIGNAL \Control_Reg_Debug:control_out_1\ : bit;
+SIGNAL Net_6717 : bit;
+SIGNAL \Control_Reg_Debug:control_out_2\ : bit;
+SIGNAL Net_6718 : bit;
+SIGNAL \Control_Reg_Debug:control_out_3\ : bit;
+SIGNAL Net_6720 : bit;
+SIGNAL \Control_Reg_Debug:control_out_4\ : bit;
+SIGNAL Net_6721 : bit;
+SIGNAL \Control_Reg_Debug:control_out_5\ : bit;
+SIGNAL Net_6722 : bit;
+SIGNAL \Control_Reg_Debug:control_out_6\ : bit;
+SIGNAL Net_6723 : bit;
+SIGNAL \Control_Reg_Debug:control_out_7\ : bit;
+SIGNAL \Control_Reg_Debug:control_7\ : bit;
+SIGNAL \Control_Reg_Debug:control_6\ : bit;
+SIGNAL \Control_Reg_Debug:control_5\ : bit;
+SIGNAL \Control_Reg_Debug:control_4\ : bit;
+SIGNAL \Control_Reg_Debug:control_3\ : bit;
+SIGNAL \Control_Reg_Debug:control_2\ : bit;
+SIGNAL \Control_Reg_Debug:control_1\ : bit;
+SIGNAL \Control_Reg_Debug:control_0\ : bit;
 SIGNAL \UART_1:BUART:reset_reg\\D\ : bit;
 SIGNAL \UART_1:BUART:txn\\D\ : bit;
 SIGNAL \UART_1:BUART:tx_state_1\\D\ : bit;
@@ -2761,6 +2794,9 @@ SIGNAL \Counter_Hall:CounterUDB:tc_reg_i\\D\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:prevCompare\\D\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:cmp_out_reg_i\\D\ : bit;
 SIGNAL \Counter_Hall:CounterUDB:count_stored_i\\D\ : bit;
+SIGNAL cydff_1D : bit;
+SIGNAL cydff_2D : bit;
+SIGNAL cydff_3D : bit;
 BEGIN
 
 one <=  ('1') ;
@@ -3073,19 +3109,19 @@ Net_39D <= ((not \UART_1:BUART:reset_reg\ and \UART_1:BUART:tx_state_2\)
 \PWM_A:PWMUDB:cmp1\ <= (\PWM_A:PWMUDB:cmp1_less\
 	OR \PWM_A:PWMUDB:cmp1_eq\);
 
-\Counter_Hall:CounterUDB:hwCapture\ <= ((not Net_6135 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_1:last\)
-	OR (not \EdgeDetect_1:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6135)
-	OR (not Net_6041 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_0:last\)
-	OR (not \EdgeDetect_0:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6041)
-	OR (not Net_6040 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_2:last\)
-	OR (not \EdgeDetect_2:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6040));
+\Counter_Hall:CounterUDB:hwCapture\ <= ((not Net_6701 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_1:last\)
+	OR (not \EdgeDetect_1:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6701)
+	OR (not Net_6700 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_0:last\)
+	OR (not \EdgeDetect_0:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6700)
+	OR (not Net_6704 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_2:last\)
+	OR (not \EdgeDetect_2:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6704));
 
-\Counter_Hall:CounterUDB:reload\ <= ((not Net_6135 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_1:last\)
-	OR (not \EdgeDetect_1:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6135)
-	OR (not Net_6041 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_0:last\)
-	OR (not \EdgeDetect_0:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6041)
-	OR (not Net_6040 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_2:last\)
-	OR (not \EdgeDetect_2:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6040)
+\Counter_Hall:CounterUDB:reload\ <= ((not Net_6701 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_1:last\)
+	OR (not \EdgeDetect_1:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6701)
+	OR (not Net_6700 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_0:last\)
+	OR (not \EdgeDetect_0:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6700)
+	OR (not Net_6704 and not \Counter_Hall:CounterUDB:prevCapture\ and \EdgeDetect_2:last\)
+	OR (not \EdgeDetect_2:last\ and not \Counter_Hall:CounterUDB:prevCapture\ and Net_6704)
 	OR \Counter_Hall:CounterUDB:per_equal\);
 
 \Counter_Hall:CounterUDB:status_0\ <= ((not \Counter_Hall:CounterUDB:cmp_less\ and not \Counter_Hall:CounterUDB:prevCompare\));
@@ -3094,16 +3130,17 @@ Net_39D <= ((not \UART_1:BUART:reset_reg\ and \UART_1:BUART:tx_state_2\)
 
 \Counter_Hall:CounterUDB:cmp_out_i\ <= (not \Counter_Hall:CounterUDB:cmp_less\);
 
-\Counter_Hall:CounterUDB:count_enable\ <= ((not \Counter_Hall:CounterUDB:count_stored_i\ and \Counter_Hall:CounterUDB:control_7\ and Net_6430));
+\Counter_Hall:CounterUDB:count_enable\ <= ((not \Counter_Hall:CounterUDB:count_stored_i\ and \Counter_Hall:CounterUDB:control_7\ and Net_6604));
 
-Net_6336 <= ((not Net_6135 and \EdgeDetect_1:last\)
-	OR (not \EdgeDetect_1:last\ and Net_6135)
-	OR (not Net_6041 and \EdgeDetect_0:last\)
-	OR (not \EdgeDetect_0:last\ and Net_6041)
-	OR (not Net_6040 and \EdgeDetect_2:last\)
-	OR (not \EdgeDetect_2:last\ and Net_6040));
+Net_6733 <= ((not Net_6701 and \EdgeDetect_1:last\)
+	OR (not \EdgeDetect_1:last\ and Net_6701)
+	OR (not Net_6700 and \EdgeDetect_0:last\)
+	OR (not \EdgeDetect_0:last\ and Net_6700)
+	OR (not Net_6704 and \EdgeDetect_2:last\)
+	OR (not \EdgeDetect_2:last\ and Net_6704));
 
-Net_6523 <= (not Net_6524);
+Net_6726 <= (Net_6728
+	OR not Net_6524);
 
 \UART_1:IntClock\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -4845,7 +4882,7 @@ Pin_Hall_1:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>Net_6135,
+		fb=>Net_6702,
 		analog=>(open),
 		io=>(tmpIO_0__Pin_Hall_1_net_0),
 		siovref=>(tmpSIOVREF__Pin_Hall_1_net_0),
@@ -4915,7 +4952,7 @@ Pin_Hall_0:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>Net_6041,
+		fb=>Net_6703,
 		analog=>(open),
 		io=>(tmpIO_0__Pin_Hall_0_net_0),
 		siovref=>(tmpSIOVREF__Pin_Hall_0_net_0),
@@ -4935,23 +4972,23 @@ HW_CLK:cy_clock_v1_0
 		period=>"0",
 		is_direct=>'1',
 		is_digital=>'1')
-	PORT MAP(clock_out=>Net_6240,
+	PORT MAP(clock_out=>Net_6637,
 		dig_domain_out=>open);
 \Status_Reg_Hall:sts:sts_reg\:cy_psoc3_status
 	GENERIC MAP(cy_force_order=>'1',
 		cy_md_select=>"00000000")
 	PORT MAP(reset=>zero,
-		clock=>Net_6240,
+		clock=>Net_6637,
 		status=>(zero, zero, zero, zero,
-			zero, Net_6040, Net_6135, Net_6041));
+			zero, Net_6040, Net_6702, Net_6703));
 \Counter_Hall:CounterUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_6240,
+	PORT MAP(clock_in=>Net_6637,
 		enable=>one,
 		clock_out=>\Counter_Hall:CounterUDB:ClockOutFromEnBlock\);
 \Counter_Hall:CounterUDB:sCTRLReg:cy_psoc3_udb_Ctl_Clk_Sync\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_6240,
+	PORT MAP(clock_in=>Net_6637,
 		enable=>one,
 		clock_out=>\Counter_Hall:CounterUDB:Clk_Ctl_i\);
 \Counter_Hall:CounterUDB:sCTRLReg:ctrlreg\:cy_psoc3_control
@@ -5148,20 +5185,20 @@ HW_CLK:cy_clock_v1_0
 ISR_Hall:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10")
 	PORT MAP(int_signal=>Net_4691);
+\Sync_1:genblk1[0]:INST\:cy_psoc3_sync
+	PORT MAP(clock=>Net_6637,
+		sc_in=>Net_6430,
+		sc_out=>Net_6604);
 \Counter_16:CounterHW\:cy_psoc3_timer_v1_0
 	GENERIC MAP(cy_registers=>"")
-	PORT MAP(clock=>Net_6240,
+	PORT MAP(clock=>Net_6637,
 		kill=>zero,
 		enable=>zero,
 		capture=>zero,
-		timer_reset=>Net_6336,
-		tc=>Net_6419,
+		timer_reset=>Net_6733,
+		tc=>Net_6430,
 		compare=>\Counter_16:Net_47\,
 		interrupt=>\Counter_16:Net_42\);
-\Sync_1:genblk1[0]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_6240,
-		sc_in=>Net_6419,
-		sc_out=>Net_6430);
 \ADC_DelSig_1:vRef_2\:cy_vref_v1_0
 	GENERIC MAP(guid=>"15B3DB15-B7B3-4d62-A2DF-25EA392A7161",
 		name=>"Vssa (GND)",
@@ -5533,7 +5570,7 @@ Pin_LED:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
-		y=>Net_6523,
+		y=>Net_6726,
 		fb=>(tmpFB_0__Pin_LED_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Pin_LED_net_0),
@@ -5546,6 +5583,16 @@ Pin_LED:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__Pin_LED_net_0);
+\Control_Reg_Debug:Sync:ctrl_reg\:cy_psoc3_control
+	GENERIC MAP(cy_init_value=>"00000000",
+		cy_force_order=>'1',
+		cy_ctrl_mode_1=>"00000000",
+		cy_ctrl_mode_0=>"00000000",
+		cy_ext_reset=>'0')
+	PORT MAP(reset=>zero,
+		clock=>zero,
+		control=>(\Control_Reg_Debug:control_7\, \Control_Reg_Debug:control_6\, \Control_Reg_Debug:control_5\, \Control_Reg_Debug:control_4\,
+			\Control_Reg_Debug:control_3\, \Control_Reg_Debug:control_2\, \Control_Reg_Debug:control_1\, Net_6728));
 \UART_1:BUART:reset_reg\:cy_dff
 	PORT MAP(d=>zero,
 		clk=>\UART_1:BUART:clock_op\,
@@ -5859,12 +5906,12 @@ Net_39:cy_dff
 		clk=>\PWM_B:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_B:PWMUDB:tc_i_reg\);
 \EdgeDetect_2:last\:cy_dff
-	PORT MAP(d=>Net_6040,
-		clk=>Net_6240,
+	PORT MAP(d=>Net_6704,
+		clk=>Net_6637,
 		q=>\EdgeDetect_2:last\);
 \EdgeDetect_0:last\:cy_dff
-	PORT MAP(d=>Net_6041,
-		clk=>Net_6240,
+	PORT MAP(d=>Net_6700,
+		clk=>Net_6637,
 		q=>\EdgeDetect_0:last\);
 \PWM_A:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
@@ -5987,11 +6034,11 @@ Net_39:cy_dff
 		clk=>\PWM_A:PWMUDB:ClockOutFromEnBlock\,
 		q=>Net_4774);
 \EdgeDetect_1:last\:cy_dff
-	PORT MAP(d=>Net_6135,
-		clk=>Net_6240,
+	PORT MAP(d=>Net_6701,
+		clk=>Net_6637,
 		q=>\EdgeDetect_1:last\);
 \Counter_Hall:CounterUDB:prevCapture\:cy_dff
-	PORT MAP(d=>Net_6336,
+	PORT MAP(d=>Net_6733,
 		clk=>\Counter_Hall:CounterUDB:ClockOutFromEnBlock\,
 		q=>\Counter_Hall:CounterUDB:prevCapture\);
 \Counter_Hall:CounterUDB:overflow_reg_i\:cy_dff
@@ -6015,8 +6062,20 @@ Net_39:cy_dff
 		clk=>\Counter_Hall:CounterUDB:ClockOutFromEnBlock\,
 		q=>\Counter_Hall:CounterUDB:cmp_out_reg_i\);
 \Counter_Hall:CounterUDB:count_stored_i\:cy_dff
-	PORT MAP(d=>Net_6430,
+	PORT MAP(d=>Net_6604,
 		clk=>\Counter_Hall:CounterUDB:ClockOutFromEnBlock\,
 		q=>\Counter_Hall:CounterUDB:count_stored_i\);
+cydff_1:cy_dff
+	PORT MAP(d=>Net_6703,
+		clk=>Net_6637,
+		q=>Net_6700);
+cydff_2:cy_dff
+	PORT MAP(d=>Net_6702,
+		clk=>Net_6637,
+		q=>Net_6701);
+cydff_3:cy_dff
+	PORT MAP(d=>Net_6040,
+		clk=>Net_6637,
+		q=>Net_6704);
 
 END R_T_L;

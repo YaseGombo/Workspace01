@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 07/03/2016 at 17:38
+// 07/24/2016 at 00:43
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -698,6 +698,19 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v"
 `endif
 
+// Component: cy_sync_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0\cy_sync_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0\cy_sync_v1_0.v"
+`endif
+
 // Counter_v3_0(CaptureMode=0, CaptureModeSoftware=0, ClockMode=3, CompareMode=1, CompareModeSoftware=0, CompareStatusEdgeSense=true, CompareValue=15, CONTROL3=1, ControlRegRemoved=0, CyGetRegReplacementString=CY_GET_REG8, CySetRegReplacementString=CY_SET_REG8, EnableMode=0, FF16=false, FF8=true, FixedFunction=true, FixedFunctionUsed=1, InitCounterValue=15, InterruptOnCapture=false, InterruptOnCompare=false, InterruptOnOverUnderFlow=false, InterruptOnTC=false, Period=15, RegDefReplacementString=reg8, RegSizeReplacementString=uint8, ReloadOnCapture=false, ReloadOnCompare=false, ReloadOnOverUnder=true, ReloadOnReset=true, Resolution=8, RunMode=0, UDB16=false, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=false, UseInterrupt=true, VerilogSectionReplacementString=sC8, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=Counter_v3_0, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Counter_16, CY_INSTANCE_SHORT_NAME=Counter_16, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=Counter_16, )
 module Counter_v3_0_5 (
     clock,
@@ -781,19 +794,6 @@ module Counter_v3_0_5 (
 
 
 endmodule
-
-// Component: cy_sync_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0\cy_sync_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_sync_v1_0\cy_sync_v1_0.v"
-`endif
 
 // Component: cy_vref_v1_60
 `ifdef CY_BLK_DIR
@@ -1115,10 +1115,31 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
 `endif
 
+// Component: cydff_v1_30
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cydff_v1_30"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cydff_v1_30\cydff_v1_30.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cydff_v1_30"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cydff_v1_30\cydff_v1_30.v"
+`endif
+
 // top
 module top ;
 
-          wire  Net_6523;
+          wire  Net_6725;
+          wire  Net_6724;
+          wire  Net_6723;
+          wire  Net_6722;
+          wire  Net_6721;
+          wire  Net_6720;
+          wire  Net_6718;
+          wire  Net_6717;
+          wire  Net_6716;
           wire  Net_6524;
           wire  Net_6516;
     electrical  Net_6515;
@@ -1126,22 +1147,22 @@ module top ;
           wire  Net_6513;
           wire  Net_6512;
     electrical  Net_6511;
-    electrical  Net_6508;
-          wire  Net_6466;
-          wire  Net_6465;
-          wire  Net_6464;
-          wire  Net_6463;
-          wire  Net_6462;
-          wire  Net_6461;
-          wire  Net_6460;
-          wire  Net_6459;
-          wire  Net_6429;
-          wire  Net_6428;
-          wire  Net_6427;
-          wire  Net_6426;
-          wire  Net_6425;
-          wire  Net_6424;
-          wire  Net_6423;
+          wire  Net_6690;
+          wire  Net_6689;
+          wire  Net_6688;
+          wire  Net_6687;
+          wire  Net_6686;
+          wire  Net_6685;
+          wire  Net_6684;
+          wire  Net_6683;
+          wire  Net_6656;
+          wire  Net_6655;
+          wire  Net_6654;
+          wire  Net_6653;
+          wire  Net_4691;
+          wire  Net_6652;
+          wire  Net_6651;
+          wire  Net_6732;
           wire [7:0] Net_4595;
           wire  Net_4594;
           wire  Net_4593;
@@ -1207,20 +1228,26 @@ module top ;
           wire  Net_38;
           wire  Net_2;
           wire  Net_37;
+          wire  Net_6604;
+          wire  Net_6728;
+          wire  Net_6726;
+          wire  Net_6727;
+          wire  Net_6700;
+          wire  Net_6703;
+    electrical  Net_6508;
+          wire  Net_6702;
+          wire  Net_6704;
+          wire  Net_6701;
           wire  Net_6430;
-          wire  Net_6419;
-          wire  Net_6336;
+          wire  Net_6733;
           wire  Net_4601;
           wire  Net_4673;
           wire  Net_4672;
-          wire  Net_4691;
-          wire  Net_6041;
+          wire  Net_6040;
           wire  Net_4183;
           wire  Net_3854;
           wire  Net_1776;
-          wire  Net_6040;
-          wire  Net_6135;
-          wire  Net_6240;
+          wire  Net_6637;
 
     UART_v2_50_0 UART_1 (
         .cts_n(1'b0),
@@ -1989,15 +2016,15 @@ module top ;
 	assign tmpOE__PWM_A_U_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
     EdgeDetect_v1_0 EdgeDetect_2 (
-        .d(Net_6040),
+        .d(Net_6704),
         .det(Net_4601),
-        .clock(Net_6240));
+        .clock(Net_6637));
     defparam EdgeDetect_2.EdgeType = 2;
 
     EdgeDetect_v1_0 EdgeDetect_0 (
-        .d(Net_6041),
+        .d(Net_6700),
         .det(Net_4672),
-        .clock(Net_6240));
+        .clock(Net_6637));
     defparam EdgeDetect_0.EdgeType = 2;
 
 
@@ -2030,9 +2057,9 @@ module top ;
     defparam PWM_A.Resolution = 16;
 
     EdgeDetect_v1_0 EdgeDetect_1 (
-        .d(Net_6135),
+        .d(Net_6701),
         .det(Net_4673),
-        .clock(Net_6240));
+        .clock(Net_6637));
     defparam EdgeDetect_1.EdgeType = 2;
 
 	wire [0:0] tmpOE__Pin_Hall_2_net;
@@ -2170,7 +2197,7 @@ module top ;
 		Pin_Hall_1
 		 (.oe(tmpOE__Pin_Hall_1_net),
 		  .y({1'b0}),
-		  .fb({Net_6135}),
+		  .fb({Net_6702}),
 		  .io({tmpIO_0__Pin_Hall_1_net[0:0]}),
 		  .siovref(tmpSIOVREF__Pin_Hall_1_net),
 		  .interrupt({tmpINTERRUPT_0__Pin_Hall_1_net[0:0]}),
@@ -2244,7 +2271,7 @@ module top ;
 		Pin_Hall_0
 		 (.oe(tmpOE__Pin_Hall_0_net),
 		  .y({1'b0}),
-		  .fb({Net_6041}),
+		  .fb({Net_6703}),
 		  .io({tmpIO_0__Pin_Hall_0_net[0:0]}),
 		  .siovref(tmpSIOVREF__Pin_Hall_0_net),
 		  .interrupt({tmpINTERRUPT_0__Pin_Hall_0_net[0:0]}),
@@ -2266,15 +2293,15 @@ module top ;
 		  .is_direct(1),
 		  .is_digital(1))
 		HW_CLK
-		 (.clock_out(Net_6240));
+		 (.clock_out(Net_6637));
 
 
     CyStatusReg_v1_90 Status_Reg_Hall (
-        .status_0(Net_6041),
-        .status_1(Net_6135),
+        .status_0(Net_6703),
+        .status_1(Net_6702),
         .status_2(Net_6040),
         .status_3(1'b0),
-        .clock(Net_6240),
+        .clock(Net_6637),
         .status_4(1'b0),
         .status_5(1'b0),
         .status_6(1'b0),
@@ -2296,16 +2323,16 @@ module top ;
 
     Counter_v3_0_4 Counter_Hall (
         .reset(1'b0),
-        .tc(Net_6424),
-        .comp(Net_6425),
-        .clock(Net_6240),
+        .tc(Net_6651),
+        .comp(Net_6652),
+        .clock(Net_6637),
         .interrupt(Net_4691),
         .enable(1'b0),
-        .capture(Net_6336),
+        .capture(Net_6733),
         .upCnt(1'b0),
         .downCnt(1'b0),
         .up_ndown(1'b1),
-        .count(Net_6430));
+        .count(Net_6604));
     defparam Counter_Hall.CaptureMode = 1;
     defparam Counter_Hall.ClockMode = 0;
     defparam Counter_Hall.CompareMode = 4;
@@ -2320,7 +2347,7 @@ module top ;
     defparam Counter_Hall.UseInterrupt = 1;
 
 
-    assign Net_6336 = Net_4601 | Net_4673 | Net_4672;
+    assign Net_6733 = Net_4601 | Net_4673 | Net_4672;
 
 
 	cy_isr_v1_0
@@ -2329,12 +2356,18 @@ module top ;
 		 (.int_signal(Net_4691));
 
 
+    cy_sync_v1_0 Sync_1 (
+        .s_in(Net_6430),
+        .clock(Net_6637),
+        .s_out(Net_6604));
+    defparam Sync_1.SignalWidth = 1;
+
     Counter_v3_0_5 Counter_16 (
-        .reset(Net_6336),
-        .tc(Net_6419),
-        .comp(Net_6459),
-        .clock(Net_6240),
-        .interrupt(Net_6460),
+        .reset(Net_6733),
+        .tc(Net_6430),
+        .comp(Net_6683),
+        .clock(Net_6637),
+        .interrupt(Net_6684),
         .enable(1'b0),
         .capture(1'b0),
         .upCnt(1'b0),
@@ -2353,12 +2386,6 @@ module top ;
     defparam Counter_16.Resolution = 8;
     defparam Counter_16.RunMode = 0;
     defparam Counter_16.UseInterrupt = 1;
-
-    cy_sync_v1_0 Sync_1 (
-        .s_in(Net_6419),
-        .clock(Net_6240),
-        .s_out(Net_6430));
-    defparam Sync_1.SignalWidth = 1;
 
     ADC_DelSig_v3_20_6 ADC_DelSig_1 (
         .vplus(Net_6508),
@@ -2580,7 +2607,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		Pin_LED
 		 (.oe(tmpOE__Pin_LED_net),
-		  .y({Net_6523}),
+		  .y({Net_6726}),
 		  .fb({tmpFB_0__Pin_LED_net[0:0]}),
 		  .io({tmpIO_0__Pin_LED_net[0:0]}),
 		  .siovref(tmpSIOVREF__Pin_LED_net),
@@ -2595,7 +2622,61 @@ module top ;
 	assign tmpOE__Pin_LED_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 
-    assign Net_6523 = ~Net_6524;
+    assign Net_6727 = ~Net_6524;
+
+    // -- DFF Start --
+    reg  cydff_1;
+    always @(posedge Net_6637)
+    begin
+        cydff_1 <= Net_6703;
+    end
+    assign Net_6700 = cydff_1;
+    // -- DFF End --
+
+    // -- DFF Start --
+    reg  cydff_2;
+    always @(posedge Net_6637)
+    begin
+        cydff_2 <= Net_6702;
+    end
+    assign Net_6701 = cydff_2;
+    // -- DFF End --
+
+    // -- DFF Start --
+    reg  cydff_3;
+    always @(posedge Net_6637)
+    begin
+        cydff_3 <= Net_6040;
+    end
+    assign Net_6704 = cydff_3;
+    // -- DFF End --
+
+    CyControlReg_v1_80 Control_Reg_Debug (
+        .control_1(Net_6716),
+        .control_2(Net_6717),
+        .control_3(Net_6718),
+        .control_0(Net_6728),
+        .control_4(Net_6720),
+        .control_5(Net_6721),
+        .control_6(Net_6722),
+        .control_7(Net_6723),
+        .clock(1'b0),
+        .reset(1'b0));
+    defparam Control_Reg_Debug.Bit0Mode = 0;
+    defparam Control_Reg_Debug.Bit1Mode = 0;
+    defparam Control_Reg_Debug.Bit2Mode = 0;
+    defparam Control_Reg_Debug.Bit3Mode = 0;
+    defparam Control_Reg_Debug.Bit4Mode = 0;
+    defparam Control_Reg_Debug.Bit5Mode = 0;
+    defparam Control_Reg_Debug.Bit6Mode = 0;
+    defparam Control_Reg_Debug.Bit7Mode = 0;
+    defparam Control_Reg_Debug.BitValue = 0;
+    defparam Control_Reg_Debug.BusDisplay = 0;
+    defparam Control_Reg_Debug.ExtrReset = 0;
+    defparam Control_Reg_Debug.NumOutputs = 1;
+
+
+    assign Net_6726 = Net_6728 | Net_6727;
 
 
 

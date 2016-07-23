@@ -30,6 +30,11 @@
 #include "globalVariables.h"
 #include "Counter_Hall.h"
 #include "Status_Reg_Hall.h"
+  
+#ifdef DEBUG
+#include <project.h>
+#include <stdio.h>
+#endif
 
 #define PERIOD PERIOD_COUNTER_HALL
 #define COMPARE COMPARE_COUNTER_HALL
@@ -170,30 +175,39 @@ CY_ISR(ISR_Hall_Interrupt)
 
     /*  Place your Interrupt code here. */
     /* `#START ISR_Hall_Interrupt` */
-  uint8 hallState_new = Status_Reg_Hall_Read();
-  int8 phase_new = table_phase[hallState_new];
-  uint8 status_isr = Counter_Hall_ReadStatusRegister();
   uint16 capture = Counter_Hall_ReadCapture();
   // uint16 period = Counter_Hall_ReadPeriod();
   // uint16 compare = Counter_Hall_ReadCompare();
-  uint16 time_new = (status_isr & Counter_Hall_STATUS_CAPTURE) ? capture : (PERIOD-1);
+  uint8 status_isr = Counter_Hall_ReadStatusRegister();
+  uint16 time_new = ((status_isr & Counter_Hall_STATUS_CAPTURE) && capture) ? capture : (PERIOD-1);
 
+  /*
+  #ifdef DEBUG
+    uint16 tmp_time = Counter_Hall_ReadCounter();
+    if(tmp_time > capture) Control_Reg_Debug_Write(1);
+    // else                   Control_Reg_Debug_Write(0);
+    debugregs[0] = capture;
+    debugregs[1] = tmp_time;
+  #endif
+  */
+   
+  uint8 hallState_new = Status_Reg_Hall_Read();
+  int8 phase_new = table_phase[hallState_new];
+  
   /// Update the history of states of the hall sensor
   int i;
   for(i = LENGTH_HIST-1; i != 0; i--){
     hallHist.phase[i] = hallHist.phase[i-1];
+    hallHist.time[i] = hallHist.time[i-1];
   }
   hallHist.phase[0] = phase_new;
-  for(i = LENGTH_HIST-1; i != 0; i--){
-    hallHist.time[i] = hallHist.phase[i-1];
-  }
   hallHist.time[0] = time_new;
-
+  
   /// Calculate angleParams
-  if(hallHist.phase[0] > 5 || hallHist.phase[1] > 5 || hallHist.phase[2] > 5){
+  if(hallHist.phase[0] > 5 || hallHist.phase[1] > 5 || hallHist.phase[2] > 5 || hallHist.phase[3] > 5){
     // Hall Sensors are not working
     status_error |= ERROR_HALL_SENSOR;
-  } else if(hallHist.time[0] >= COMPARE || hallHist.time[1] >= COMPARE || hallHist.time[2] >= COMPARE){
+  } else if(hallHist.time[0] >= COMPARE || hallHist.time[1] >= COMPARE || hallHist.time[2] >= COMPARE || hallHist.time[3] >= COMPARE){
     // Motor rotation is very slow
     Set_angleParams_Center();
   } else {
