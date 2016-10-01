@@ -175,12 +175,26 @@ CY_ISR(ISR_Hall_Interrupt)
 
     /*  Place your Interrupt code here. */
     /* `#START ISR_Hall_Interrupt` */
-  uint16 capture = Counter_Hall_ReadCapture();
+
+  uint16 time_new = (PERIOD - 1);
+  uint16 capture = 0;
+  uint8 status_isr = 0;
+  
+  uint8 temp_status_isr;
+  while((temp_status_isr = Counter_Hall_ReadStatusRegister()) & Counter_Hall_STATUS_FIFONEMP){
+    capture = Counter_Hall_ReadCapture();
+    status_isr = temp_status_isr;
+  }
+  if((status_isr & Counter_Hall_STATUS_CAPTURE) && capture)  time_new = capture;
+
   // uint16 period = Counter_Hall_ReadPeriod();
   // uint16 compare = Counter_Hall_ReadCompare();
+  /*
   uint8 status_isr = Counter_Hall_ReadStatusRegister();
+  uint16 capture = Counter_Hall_ReadCapture();
   uint16 time_new = ((status_isr & Counter_Hall_STATUS_CAPTURE) && capture) ? capture : (PERIOD-1);
-
+  */
+    
   /*
   #ifdef DEBUG
     uint16 tmp_time = Counter_Hall_ReadCounter();
@@ -251,6 +265,16 @@ CY_ISR(ISR_Hall_Interrupt)
       break;
     }
   }
+  
+  /*
+  #ifdef DEBUG
+  debugregs[0] = phase_new;
+  debugregs[1] = time_new;
+  debugregs[2] = status_error;
+  debugregs[3] = status_isr;
+  #endif
+  */
+  
     /* `#END` */
 }
 

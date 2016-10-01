@@ -21,8 +21,6 @@
 #include "cydisabledsheets.h"
 #include "UART_1.h"
 #include "ISR_PWM_TC.h"
-#include "Pin_TC_aliases.h"
-#include "Pin_TC.h"
 #include "PWM_C_L_aliases.h"
 #include "PWM_C_L.h"
 #include "PWM_C_U_aliases.h"

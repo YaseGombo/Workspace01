@@ -197,9 +197,11 @@ CY_ISR(ISR_PWM_TC_Interrupt)
   
   // about -48 cycles
   MY_PWM_A_WRITECOMPARE(pwm_abc[0]);  // PWM_A_WriteCompare(pwm_abc[0]);
+  /*
   #ifdef DEBUG
   SysTick_Config(SYSTICK_MAXVAL);
   #endif
+  */
   // about -36 cycles
   MY_PWM_B_WRITECOMPARE(pwm_abc[1]);  // PWM_B_WriteCompare(pwm_abc[1]);
   // about -25 cycles
@@ -207,10 +209,12 @@ CY_ISR(ISR_PWM_TC_Interrupt)
   // about -21 cycles
   
   if(angleParams.updated){
+    /*
     #ifdef DEBUG
     SysCntVal = SYSTICK_MAXVAL - (SysTick->VAL); 
     asm("nop");
     #endif
+    */
     uint16 tmp_time = Counter_Hall_ReadCounter();
     
     thm0 = angleParams.thm0;

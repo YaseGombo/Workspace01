@@ -1,5 +1,5 @@
 # Design01
-# 2016-07-23 15:43:12Z
+# 2016-08-01 13:02:23Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -13,13 +13,12 @@ dont_use_io iocell 15 0
 dont_use_io iocell 15 1
 set_io "Rx_1(0)" iocell 12 6
 set_io "Tx_1(0)" iocell 12 7
-set_io "Pin_TC(0)" iocell 0 6
-set_io "PWM_C_L(0)" iocell 12 5
-set_io "PWM_C_U(0)" iocell 12 4
-set_io "PWM_B_L(0)" iocell 12 3
-set_io "PWM_B_U(0)" iocell 12 2
-set_io "PWM_A_L(0)" iocell 12 1
-set_io "PWM_A_U(0)" iocell 12 0
+set_io "PWM_C_L(0)" iocell 12 0
+set_io "PWM_C_U(0)" iocell 12 1
+set_io "PWM_B_L(0)" iocell 12 2
+set_io "PWM_B_U(0)" iocell 12 3
+set_io "PWM_A_L(0)" iocell 12 4
+set_io "PWM_A_U(0)" iocell 12 5
 set_io "Pin_Hall_2(0)" iocell 2 5
 set_io "Pin_Hall_1(0)" iocell 2 4
 set_io "Pin_Hall_0(0)" iocell 2 3

@@ -27,9 +27,6 @@
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\UART_1_BOOT.c" value="ARM_C_FILE;UART_1" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ISR_PWM_TC.c" value="ARM_C_FILE;ISR_PWM_TC" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\ISR_PWM_TC.h" value="NONE;ISR_PWM_TC" />
-  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_TC_aliases.h" value="NONE;Pin_TC" />
-  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_TC.c" value="ARM_C_FILE;Pin_TC" />
-  <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\Pin_TC.h" value="NONE;Pin_TC" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\PWM_C_L_aliases.h" value="NONE;PWM_C_L" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\PWM_C_L.c" value="ARM_C_FILE;PWM_C_L" />
   <file name="E:\KI\Documents\PSoC Creator\Workspace01\Design01.cydsn\codegentemp\PWM_C_L.h" value="NONE;PWM_C_L" />

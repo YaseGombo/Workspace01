@@ -124,9 +124,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PWM_C_L_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PWM_C_L.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PWM_C_L.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_TC_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_TC.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_TC.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ISR_PWM_TC.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\isr_pwm_tc.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_Hall_2_aliases.h</File>
