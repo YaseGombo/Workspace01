@@ -136,9 +136,9 @@ void MyInit()
 /********************************/
 int main()
 {
-    CyGlobalIntEnable; /* Enable global interrupts. */
+  CyGlobalIntEnable; /* Enable global interrupts. */
 
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  /* Place your initialization/startup code here (e.g. MyInst_Start()) */
   MyInit();
       
   ADC_DelSig_1_Start();
@@ -148,45 +148,47 @@ int main()
   inv_vbat = VBAT_NORMALwithOFFSET_INVVBAT / vbat_ave;
   ADC_DelSig_1_IRQ_Enable();
   ADC_DelSig_1_StartConvert();
+
+  Control_Reg_PWM_Reset_Write(1);
+  PWM_A_Start();
+  PWM_B_Start();
+  PWM_C_Start();
+  Control_Reg_PWM_Reset_Write(0);
   
-    Control_Reg_PWM_Reset_Write(1);
-    PWM_A_Start();
-    PWM_B_Start();
-    PWM_C_Start();
-    Control_Reg_PWM_Reset_Write(0);
-    
-    Counter_16_Start();
-    Counter_Hall_Start();
-    UART_1_Start();
-    ISR_Hall_Start();
-    ISR_PWM_TC_Start();
-    
-    char TransmitBuffer[TRBUF_LENGTH];
+  Counter_16_Start();
+  Counter_Hall_Start();
+  UART_1_Start();
+  ISR_Hall_Start();
+  ISR_PWM_TC_Start();
+  
+  char TransmitBuffer[TRBUF_LENGTH];
+  /*
+  char ReadBuffer[READBUF_LENGTH];
+  char chtmp;
+  int readcnt = 0;
+  int32 tmplambda;
+  */
+  for(;;)
+  {
+    /* Place your application code here. */
+    #ifdef DEBUG
+    sprintf(TransmitBuffer, "%ld %ld %ld %ld\r\n", debugregs[0], debugregs[1], debugregs[2], debugregs[3]);
+    UART_1_PutString(TransmitBuffer);
+    #endif
     /*
-    char ReadBuffer[READBUF_LENGTH];
-    char chtmp;
-    int readcnt = 0;
-    int32 tmplambda;
-    */
-    for(;;)
-    {
-        /* Place your application code here. */
-      sprintf(TransmitBuffer, "%ld %ld %ld %ld\r\n", debugregs[0], debugregs[1], debugregs[2], debugregs[3]);
-      UART_1_PutString(TransmitBuffer);
-      /*
-        if(UART_1_ReadRxStatus() & UART_1_RX_STS_FIFO_NOTEMPTY){
-          chtmp = UART_1_ReadRxData();
-          if(isprint((unsigned char)chtmp)){
-            ReadBuffer[readcnt++] = chtmp;
-            if(readcnt == READBUF_LENGTH) readcnt = 0;
-          } else if(chtmp == '\n'){
-            ReadBuffer[readcnt++] = '\0';
-            tmplambda = strtol(ReadBuffer, NULL, 10);
-            lambda = (tmplambda <= -PRECISION_LAMBDA) ? -(PRECISION_LAMBDA-1) : (tmplambda >= PRECISION_LAMBDA) ? (PRECISION_LAMBDA-1) : tmplambda;
-            readcnt = 0;
-          }
+      if(UART_1_ReadRxStatus() & UART_1_RX_STS_FIFO_NOTEMPTY){
+        chtmp = UART_1_ReadRxData();
+        if(isprint((unsigned char)chtmp)){
+          ReadBuffer[readcnt++] = chtmp;
+          if(readcnt == READBUF_LENGTH) readcnt = 0;
+        } else if(chtmp == '\n'){
+          ReadBuffer[readcnt++] = '\0';
+          tmplambda = strtol(ReadBuffer, NULL, 10);
+          lambda = (tmplambda <= -PRECISION_LAMBDA) ? -(PRECISION_LAMBDA-1) : (tmplambda >= PRECISION_LAMBDA) ? (PRECISION_LAMBDA-1) : tmplambda;
+          readcnt = 0;
         }
-      */
-    }
+      }
+    */
+  }
 }
 /* [] END OF FILE */
